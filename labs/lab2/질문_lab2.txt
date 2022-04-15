@@ -1,0 +1,9 @@
+첫번째 질문. except 1st one이 무슨 의미인지.
+
+두번째 질문. 저는 argv[0]값을 빼고 출력하라고 의미했는데 그렇다면 아래 설명한것 처럼 제가 이해한게 맞는지.
+
+"Print **argv using printfunc(**argv) except 1st one\n"
+-printfunc에 if(n==0) continue; 라는 스크립트를 추가하거나 아니면 printfunc을 건드리지 말고 argv[0]을 출력하지 않게 해야하는지.
+
+copy **argv to a `vector<string> names;` except 1st one. 
+-그럼 names[0]에는 argv[1] 값이 부터 들어가는지

@@ -1,0 +1,9 @@
+﻿  infix.cpp
+C:\GitHub\shinhoo\psets\pset7\infix.cpp(132,34): warning C4244: '=': '_Ty'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              _Ty=double
+          ]
+  infixDriver.cpp
+  코드를 생성하고 있습니다...
+  pset7.vcxproj -> C:\GitHub\shinhoo\DataStructure\x64\Debug\pset7.exe

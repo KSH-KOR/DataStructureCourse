@@ -1,0 +1,2 @@
+﻿nowic.lib(nowic.obj) : warning LNK4099: 'libnowic.pdb' PDB를 'nowic.lib(nowic.obj)' 또는 'C:\GitHub\shinhoo\DataStructure\x64\Debug\libnowic.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+LINK : fatal error LNK1104: 'C:\GitHub\shinhoo\DataStructure\x64\Debug\linkedList.exe' 파일을 열 수 없습니다.

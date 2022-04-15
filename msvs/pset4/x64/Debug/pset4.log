@@ -1,0 +1,7 @@
+﻿  profiling.cpp
+profiling.obj : error LNK2019: "bool __cdecl less(int,int)" (?less@@YA_NHH@Z)main 함수에서 참조되는 확인할 수 없는 외부 기호
+profiling.obj : error LNK2019: "void __cdecl insertionsort(int *,int,bool (__cdecl*)(int,int))" (?insertionsort@@YAXPEAHHP6A_NHH@Z@Z)main 함수에서 참조되는 확인할 수 없는 외부 기호
+profiling.obj : error LNK2019: "void __cdecl mergesort(int *,int,bool (__cdecl*)(int,int))" (?mergesort@@YAXPEAHHP6A_NHH@Z@Z)main 함수에서 참조되는 확인할 수 없는 외부 기호
+profiling.obj : error LNK2019: "void __cdecl quicksort(int *,int,bool (__cdecl*)(int,int))" (?quicksort@@YAXPEAHHP6A_NHH@Z@Z)main 함수에서 참조되는 확인할 수 없는 외부 기호
+profiling.obj : error LNK2019: "void __cdecl randomize(int * const,int)" (?randomize@@YAXQEAHH@Z)main 함수에서 참조되는 확인할 수 없는 외부 기호
+C:\GitHub\shinhoo\DataStructure\x64\Debug\pset4.exe : fatal error LNK1120: 5개의 확인할 수 없는 외부 참조입니다.

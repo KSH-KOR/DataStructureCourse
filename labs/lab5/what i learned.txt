@@ -1,0 +1,61 @@
+# Lab05 - Understanding a better coding in C/C++
+
+## Subjects
+  - Use new and delete instead of malloc(), free()
+  - Use assert() after new to check the memory allocation status
+  - rand() and mod operator % 
+  - Learn about __a better coding__ after all.
+
+2. Get an array size n from the user and set it for `n`. 
+#include <string> header file
+#what i used : `getline()` and `stoi()` and (try and catch)
+# example
+size_t sz;
+string str;
+
+try {
+      int temp = stoi(str, &sz);
+    } catch (...) {
+      cout << "Retry -" << endl;
+      continue;
+    }
+
+3. Dynamic memory allocation in C++  
+Direction:
+i)Use a pointer `int *list` and `new (nothrow) int[n]`
+ii)Right after the allocation, use `assert()` to check that the allocation was successful as shown below:
+ex) assert(list != nullptr); // required <cassert> header file for assert()
+how it works: ""If `new` fails, it returns `nullptr`. If `list == nullptr`, then the process stops here. This is the simplest way of checking assertion in coding. ""
+
+4.rand() % n // Generate random numbers from `0` to `n`
+
+
+## `new` and `delete` operators in C++
+Dynamic memory allocation in C/C++ refers to performing memory allocation manually by programmer. Dynamically allocated memory is allocated on ""Heap"", while non-static and local variables get memory allocated on Stack.
+
+### How is memory allocated/deallocated in C++?
+C++ also has two operators `new` and `delete` that perform the task of allocating and freeing the memory in a better and easier way than 'malloc()', 'calloc()', and 'free()'.
+i) systax
+pointer-variable = new data-type // pointer-variable is the pointer of type data-type
++ Data-type could be any built-in data type including array or any user defined data types including structure and class.
+Example)
+  // Combine declaration of pointer and their assignment
+  int *p = new int;       // one int memory allocated
+  int *q = new int(7);    // initialized with 7
+  int *r = new int[10];   // allocated for array of 10 integers
+  int *s = (int *) malloc(sizeof(int) * 10);
+
+#### Using new or malloc() vs normal array declaration
+There is a difference between ""declaring"" a normal array and allocating a block of memory using `new`.
+The most important difference: how they are allocated and when they are deallocated are different
+i) normal arrays are deallocated automatically. If array is local, then deallocated when function returns or completes. 
+ii) however, dynamically allocated arrays always ""remain"" there "until" either they are deallocated by programmer or program terminates.
+
+#### What if enough memory is not available during runtime?
+the `new` returns a `nullptr` pointer when `(nothrow)` is specified.
+Therefore, it may be good idea to check for the pointer variable produced by new before using it program with  `assert()`.
+
+## delete operator or free() function
+
+
+
